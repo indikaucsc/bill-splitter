@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "f4c816fd-dac1-4d92-a846-551ff15691ff",
+		"name": "Bill splitter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/bill/settlements",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n    \"data\": [ {\n\n        \"day\": 0,\n\n        \"amount\": 120,\n\n        \"paid_by\": \"sadun\",\n\n        \"friends\": [\"kamal\", \"sadun\", \"kamal\"]\n\n    },\n    {\n\n        \"day\": 0,\n\n        \"amount\": 120,\n\n        \"paid_by\": \"sadun\",\n\n        \"friends\": [\"kamal\", \"sadun\", \"kamal\"]\n\n    },{\n\n        \"day\": 0,\n\n        \"amount\": 120,\n\n        \"paid_by\": \"nimal\",\n\n        \"friends\": [\"kamal\", \"sadun\", \"nimal\"]\n\n    }\n\n    \n    \n    ]\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/v1/bill/settlements",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"bill",
+						"settlements"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
