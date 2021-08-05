@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unitTest version="1">
+    <file path="/home/lakshitha/MyStuff/DigitalX/Rabbit/GIT/lucky-one-api-rab-1845-error-handling-refactor/lucky-one-api/src/__tests__/controller/common-wallet-controller.test.ts">
+        <testCase name="Test handleCommonWalletInfo handleCommonWalletInfo success" duration="8">
+            <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [Function CommonWalletServiceMock]
+Received: [Function getWalletInfo]
+    at /home/lakshitha/MyStuff/DigitalX/Rabbit/GIT/lucky-one-api-rab-1845-error-handling-refactor/lucky-one-api/src/__tests__/controller/common-wallet-controller.test.ts:64:61
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/lakshitha/MyStuff/DigitalX/Rabbit/GIT/lucky-one-api-rab-1845-error-handling-refactor/lucky-one-api/src/__tests__/controller/common-wallet-controller.test.ts:17:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)]]></failure>
+        </testCase>
+    </file>
+    <file path="/home/lakshitha/MyStuff/DigitalX/Rabbit/GIT/lucky-one-api-rab-1845-error-handling-refactor/lucky-one-api/src/__tests__/controller/user-controller.test.ts">
+        <testCase name="Test UserController handleListUsers success" duration="4"/>
+        <testCase name="Test UserController handleUserLogin success" duration="35"/>
+        <testCase name="Test UserController handleUserLogin error" duration="1"/>
+    </file>
+</unitTest>

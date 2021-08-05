@@ -1,0 +1,212 @@
+
+const promise1 = Promise.resolve(3);
+const promise2 = 42;
+const promise3 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 100, 'foo');
+});
+
+Promise.all([promise1, promise2, promise3]).then((values) => {
+  console.log(values);
+});
+// expected output: Array [3, 42, "foo"]
+
+
+
+const p1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        console.log('The first promise has resolved');
+
+        resolve(10);
+    }, 1 * 1000);
+
+});
+
+
+const cmdArgs = process.argv.slice(2);
+const greetingText = cmdArgs[0] ? cmdArgs[0] : "Happy birthday!";
+const who = cmdArgs[1] ? cmdArgs[1] : "Indika";
+
+// catch any errors
+init(cmdArgs).catch((err) => {
+  logger.error("Application Error : ",err.message);
+});
+
+/**
+ * main method
+ *
+ */
+async function init() {
+
+  logger.info(`greetingText : ${greetingText} | who : ${who}`);
+  const newImageName = `greeting-card-${new Date().getTime()}.jpg`;   // new image name
+  const firstImage = await generateCatImage(greetingText);              // get first random cat image with text
+  const secondImage = await generateCatImage(who);                      // get second random cat image with text
+  const newImage = await blendImages(firstImage, secondImage);
+  await newImage.writeAsync(newImageName);
+  logger.info(`Generated cat card to ${newImageName}`);
+}
+
+/**
+ * call CATAAS api (https://cataas.com/)
+ *
+ */
+async function generateCatImage(text) {
+  logger.info(`generateCatImage | text : ${text} | params :`,  PARAMS);
+  const response = await axios.get(
+    `${CATAPI_BASE_URL}/says/${text}?width=${PARAMS.width}&height=${PARAMS.height}&color=${PARAMS.textColor}&size=${PARAMS.textSize}`,
+    {
+      responseType: "arraybuffer",
+    }
+  );
+  if (response.data) {
+    return Buffer.from(response.data, "binary");
+  } else {
+    logger.error("CATAAS services Error : ");
+    throw error("CATAAS services error");
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Created with webstorm.
+ * User: Kamal Indika.
+ * Date: 18/10/2019
+ * Time: 09:00 AM
+ * DXL-992-ticket-release-service-scheduled
+ * Mail Sender.
+ */
+
+Lms old
+/opt/zm/java/lms
+
+
+/home/kamal/eclipse/jee-2019-09/eclipse
+
+
+ npm run db:migrate-all
+
+ npm run db:migrate:undo:20210311080413-create-alter-winners-add-prizetype-and-drawtype.js
+
+npx sequelize db:migrate:undo:20210311080413-create-alter-winners-add-prizetype-and-drawtype.js
+
+
+ npm run db:seed-all
+
+
+cd /var/www/prod/lucky1/lucky-one-api
+
+
+
+ sudo ufw allow 8050/tcp
+npm start
+
+username - lucky1Postman
+password - lucky1postman
+
+
+npx sequelize-cli migration:generate --name create-ticket-retry-queue
+
+
+npx sequelize-cli migration:generate --name create-draw-subscribers
+
+TicketSMSRetryQueues
+npx sequelize-cli migration:generate --name create-ticket-sms-retry-queue
+
+
+npx sequelize-cli migration:generate --name create-txn-restart-queue
+
+npx sequelize-cli migration:generate --name create-alter-ticket-status
+
+
+npx sequelize-cli migration:generate --name create-alter-draw-subscribers-remove-count
+
+
+
+
+npx sequelize-cli seed:generate --name seed-ticket-status
+
+npx sequelize-cli seed:generate --name seed-ticket-new-status
+
+
+npx sequelize-cli seed:generate --name seed-merchant-proxy-user
+npx sequelize-cli seed:generate --name seed-merchant-proxy-user-permissions
+npx sequelize-cli seed:generate --name seed-generate-token-permissions-admin
+
+
+npx sequelize-cli seed:generate --name seed-ticket-release-permissions
+
+
+https://git.it4zm.com/lucky1/lucky-one-api.git
+
+
+UPDATE `dev_lucky1_v2`.`Tickets` SET `status`='1' WHERE `id`>'1';
+
+
+SELECT *
+FROM performance_schema.data_locks WHERE object_name = 'Tickets';
+
+
+SELECT * FROM dev_lucky1_v2.SequelizeMeta;
+
+
+
+<ticket serial number>_<mobile number>_<nic>
+
+
+
+This prints 10 lines of trailing context after matching lines
+
+grep -i "my_regex" -A 10
+If you need to print 10 lines of leading context before matching lines,
+
+grep -i "my_regex" -B 10
+And if you need to print 10 lines of leading and trailing output context.
+
+grep -i "my_regex" -C 10
+
+
+cd /home/ubuntu/.pm2/logs/
+
+
+
+{
+    "salesType":"ON_DEMAND",
+    "source":"sms",
+    "payload":{
+        "packageId":63,
+        "mobileNumber":"0712284830",
+        "nic":"882522092V",
+        "count":1
+
+    }
+
+}

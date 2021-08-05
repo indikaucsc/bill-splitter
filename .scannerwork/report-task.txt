@@ -1,0 +1,6 @@
+projectKey=lukcy1-api-dev
+serverUrl=http://localhost:9000
+serverVersion=7.8.0.26217
+dashboardUrl=http://localhost:9000/dashboard?id=lukcy1-api-dev
+ceTaskId=AXgA8ANWHJqMPCzxLuye
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXgA8ANWHJqMPCzxLuye

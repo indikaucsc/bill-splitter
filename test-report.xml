@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unitTest version="1">
+  <file path="/opt/zm/node-app/lucky1-after-2021-03-05/bill-splitter/__tests__/controller/bill-controller.test.ts">
+    <testCase name="Test BillController CalculateBillSpilit method should work properly" duration="5"/>
+    <testCase name="Test BillController CalculateBillSpilit method should throw invalid paid_by error" duration="2"/>
+    <testCase name="Test BillController CalculateBillSpilit method should throw invalid amount error" duration="0"/>
+  </file>
+  <file path="/opt/zm/node-app/lucky1-after-2021-03-05/bill-splitter/__tests__/controller/bill-services-impl.test.ts">
+    <testCase name="Test BillServiceImpl CalculateBillSpilit method should work properly" duration="5"/>
+  </file>
+</unitTest>
